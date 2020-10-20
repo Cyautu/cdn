@@ -17,6 +17,3 @@ $.ajax({
     cache: true,
     async: false
 });
-
-// 初始化看板娘，加载 waifu-tips.json
-initModel('https://cdn.jsdelivr.net/gh/yuu2b/cdn/live2d-widget/waifu-tips.json');
