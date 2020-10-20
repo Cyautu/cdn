@@ -42,7 +42,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！", "记得把小家加入 Adblock 白名单哦！"];
+		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！", "记得把人家加入 Adblock 白名单哦！"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
@@ -65,7 +65,7 @@ function loadWidget(config) {
 				window.ASTEROIDSPLAYERS.push(new Asteroids());
 			} else {
 				const script = document.createElement("script");
-				script.src = "https://cdn.jsdelivr.net/gh/stevenjoezhang/asteroids/asteroids.js";
+				script.src = "https://cdn.jsdelivr.net/gh/yuu2b/cdn/live2d-widget/asteroids.js";
 				document.head.appendChild(script);
 			}
 		});
@@ -77,7 +77,7 @@ function loadWidget(config) {
 			Live2D.captureFrame = true;
 		});
 		document.querySelector("#waifu-tool .fa-info-circle").addEventListener("click", () => {
-			open("https://github.com/stevenjoezhang/live2d-widget");
+			open("https://github.com/yuu2b/cdn/tree/master/live2d-widget");
 		});
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());
@@ -163,7 +163,7 @@ function loadWidget(config) {
 		if (modelId === null) {
 			// 首次访问加载 指定模型 的 指定材质
 			modelId = 1; // 模型 ID
-			modelTexturesId = 53; // 材质 ID
+			modelTexturesId = 46; // 材质 ID
 		}
 		loadModel(modelId, modelTexturesId);
 		fetch(waifuPath)
@@ -214,6 +214,7 @@ function loadWidget(config) {
 			if (!modelList) await loadModelList();
 			const target = randomSelection(modelList.models[modelId]);
 			loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
+			console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);
 		} else {
 			loadlive2d("live2d", `${apiPath}get/?id=${modelId}-${modelTexturesId}`);
 			console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);
@@ -230,11 +231,13 @@ function loadWidget(config) {
 			showMessage("我的新衣服好看嘛？", 4000, 10);
 		} else {
 			// 可选 "rand"(随机), "switch"(顺序)
-			fetch(`${apiPath}rand_textures/?id=${modelId}-${modelTexturesId}`)
+			fetch(`${apiPath}switch_textures/?id=${modelId}-${modelTexturesId}`)
 				.then(response => response.json())
 				.then(result => {
-					if (result.textures.id === 1 && (modelTexturesId === 1 || modelTexturesId === 0)) showMessage("我还没有其他衣服呢！", 4000, 10);
-					else loadModel(modelId, result.textures.id, "我的新衣服好看嘛？");
+					if (result.textures.id === 1 && (modelTexturesId === 1 || modelTexturesId === 0))
+						showMessage("我还没有其他衣服呢！", 4000, 10);
+					else
+						loadModel(modelId, result.textures.id, "我的新衣服好看嘛？");
 				});
 		}
 	}
