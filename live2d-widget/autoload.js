@@ -21,7 +21,7 @@ $.ajax({
 // 初始化看板娘，加载 waifu-tips.json
 
 /* 可直接修改部分参数 */
-live2d_settings['modelId'] = 5;                  // 默认模型 ID
-live2d_settings['modelTexturesId'] = 1;          // 默认材质 ID
+// live2d_settings['modelId'] = 5;                  // 默认模型 ID
+// live2d_settings['modelTexturesId'] = 1;          // 默认材质 ID
 /* 在 initModel 前添加 */
 initModel('https://cdn.jsdelivr.net/gh/yuu2b/cdn/live2d-widget/waifu-tips.json');
