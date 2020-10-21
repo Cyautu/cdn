@@ -27,7 +27,7 @@
 		"selector": ".site-branding",
 		"text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦。", "点它就可以回到首页啦！", "回首页看看吧。"]
 	}, {
-		"selector": ".faa-parent .animated-hover",
+		"selector": ".menu .faa-parent",
 		"text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦。", "点它就可以回到首页啦！", "回首页看看吧。"]
 	},{
 		"selector": "a[href^='/about/']",
@@ -41,12 +41,9 @@
 	}, {
 		"selector": ".searchbox .search-form-submit",
 		"text": ["找不到想看的内容？搜索看看吧！", "在找什么东西呢，需要帮忙吗？"]
-	},  {
-		"selector": "a[href^='/tags/']",
-		"text": ["要去看看 <span>{text}</span> 标签么？"]
 	}, {
 		"selector": "a[href^='/categories/']",
-		"text": ["要去看看 <span>{text}</span> 分类么？"
+		"text": ["要去看看 <span>{text}</span> 么？"]
 	}, {
 		"selector": ".post-title-link",
 		"text": ["要看看 <span>{text}</span> 这篇文章吗？"]
@@ -139,7 +136,7 @@
 		"text": ["哇，快看看这个精彩评论！", "如果有疑问，请尽快留言哦～"]
 	}],
 	"click": [{
-		"selector": "",
+		"selector": "fsd",
 		"text": ["*********"]
 	}],
 	"seasons": [{

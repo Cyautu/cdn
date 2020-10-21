@@ -1,5 +1,6 @@
 /*
  * Live2D Widget
+ * 修改自
  * https://github.com/stevenjoezhang/live2d-widget
  */
 
