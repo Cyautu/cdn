@@ -30,7 +30,7 @@
 		"selector": ".home-page",
 		"text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦。", "点它就可以回到首页啦！", "回首页看看吧。"]
 	}, {
-		"selector": "a[href='/archives' .faa-parent]",
+		"selector": "a[href='/archives']",
 		"text": ["翻页比较麻烦吗，那就来看看文章归档吧。", "文章类型都整理在这里啦！"]
 	}, {
 		"selector": "a[href^='/categories/']",
@@ -45,13 +45,13 @@
 		"selector": "a[href='/music/']",
 		"text": ["要去看看 <span>{text}</span> 么？"]
 	}, {
-		"selector": "a[href='/comment/' .faa-parent]",
+		"selector": "a[href='/comment/']",
 		"text": ["去留下你想说的话吧","去看看留言板嘛~~~"]
 	}, {
-		"selector": "a[href^='/links/' .faa-parent]",
+		"selector": "a[href^='/links/']",
 		"text": ["这是我的朋友们哦ヾ(◍°∇°◍)ﾉﾞ", "要去大佬们的家看看吗？", "要去拜访一下我的朋友们吗？"]
 	}, {
-		"selector": "a[href='/donate/' .faa-parent]",
+		"selector": "a[href='/donate/']",
 		"text": ["$_$"]
 	}, {
 		"selector": "a[href='/about/']",
@@ -75,22 +75,22 @@
 		"selector": "#jinrishici-sentence",
 		"text": ["喜欢这句诗嘛？ 哈哈哈"]
 	}, {
-		"selector": "#bg-pre img",
+		"selector": "#bg-pre",
 		"text": ["上一张背景图~"]
 	}, {
-		"selector": "a[title='github' img]",
+		"selector": "a[title='github']",
 		"text": ["去我的github看看嘛~"]
 	}, {
-		"selector": "a[title='wangyiyun' img]",
+		"selector": "a[title='wangyiyun']",
 		"text": ["去我的网易云音乐听听歌嘛~"]
 	}, {
-		"selector": "a[title='zhihu' img]",
+		"selector": "a[title='zhihu']",
 		"text": ["去我的知乎看看嘛~"]
 	}, {
 		"selector": ".wechatInner",
 		"text": ["这是我的微信二维码～"]
 	}, {
-		"selector": "#bg-next img",
+		"selector": "#bg-next",
 		"text": ["下一张背景图~"]
 	}, {
 		"selector": "#video-btn",
@@ -120,7 +120,7 @@
 		"selector": "#PayPal",
 		"text": ["暂时还没有paypal啦！"]
 	}, {
-		"selector": ".post-lincenses a",
+		"selector": ".post-lincenses",
 		"text": ["这是开源协议啦，记得要遵守哦"]
 	}, {
 		"selector": ".post-share",
