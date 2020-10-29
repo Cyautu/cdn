@@ -43,7 +43,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["suiya~~~", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～", "我只是在说梦话而已！", "拿小拳拳锤你胸口！", "记得把人家加入 Adblock 白名单哦！"];
+		messageArray = ["suiya~~~", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～", "我只是在说梦话而已！", "左下角可以播放好听的音乐哦~ 听一听嘛", "记得把人家加入 Adblock 白名单哦！"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
