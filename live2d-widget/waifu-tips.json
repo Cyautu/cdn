@@ -186,8 +186,8 @@
 		"selector": ".Sakura",
 		"text": ["mashiro写的Sakura主题，点击去他的github看看~","你也想用这个Sakura主题吗~"]
 	}, {
-		"selector": ".Hexo",
-		"text": ["Hexo是一个快速、简洁且高效的博客框架"]
+		"selector": ".gp",
+		"text": ["Websites for you and your projects"]
 	}, {
 		"selector": "#busuanzi",
 		"text": ["这是用不蒜子统计的哦~"]
