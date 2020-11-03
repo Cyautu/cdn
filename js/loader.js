@@ -14,5 +14,5 @@ document.onreadystatechange = function () {
         $('body').css('overflow','auto');
     }
 }
-</script>>`)
+</script>`)
 
