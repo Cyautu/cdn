@@ -81,7 +81,7 @@ function bot_ui_ini() {
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "毕业一年多了，在人类文明发展的道路上越走越远=。="
+                                content: "大学毕业一年多了，在人类文明发展的道路上越走越远=。="
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
@@ -106,12 +106,12 @@ function bot_ui_ini() {
         thirdpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "这个很简单，取名字太难了，所以就用自己的名字了"
+                content: "。。。取名字太难了，所以就用自己的名字了"
             }).then(function () {
                 botui.action.button({
                     delay: 1500,
                     action: [{
-                        text: "为什么是樱花庄呢？ 🤔",
+                        text: "为什么选樱花庄这个主题呢？ 🤔",
                         value: "why-cat"
                     }]
                 }).then(function (a) {
@@ -126,7 +126,7 @@ function bot_ui_ini() {
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
-                    content: "之前在某个博客看见了这个主题，然后就喜欢上了~"
+                    content: "之前在某个大佬的博客看见了这个主题，眼前一亮就喜欢上了~"
                 }).then(function () {
                     botui.action.button({
                         delay: 1500,
